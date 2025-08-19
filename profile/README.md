@@ -20,10 +20,10 @@
 <td>BE AI</td>
 <td>추천 시스템 및 OCR 파이프라인, 추천 관련 API 및 Redis 캐싱, DevOps</td>
 <td>
-  <a href="https://github.com/hun9008/CV_Search/tree/dev_spring">
+  <a href="https://github.com/ajou-www/goodjob-spring">
     <img src="https://img.shields.io/badge/click--here-dev--spring-green?style=for-the-badge&logo=spring" alt="Go to Dev">
   </a>
-  <a href="https://github.com/hun9008/CV_Search/tree/dev_ES">
+  <a href="https://github.com/ajou-www/goodjob-es">
     <img src="https://img.shields.io/badge/click--here-dev--ES-blue?style=for-the-badge&logo=fastAPI" alt="Go to Dev">
   </a>
 </td>
@@ -35,7 +35,7 @@
       <td>BE</td>
       <td>OAuth 회원가입, 지원이력, 피드백 생성, 공고 검색 및 필터 기능 구현</td>
       <td>
-        <a href="https://github.com/hun9008/CV_Search/tree/dev_spring_jin">
+        <a href="https://github.com/ajou-www/goodjob-spring">
           <img src="https://img.shields.io/badge/click--here-dev--spring-green?style=for-the-badge&logo=spring" alt="Go to Dev">
         </a>
       </td>
@@ -45,7 +45,7 @@
 <td>DATA </td>
 <td>크롤링, 필터링, 데이터 시각화 구현</td>
 <td>
-  <a href="https://github.com/hun9008/CV_Search/tree/dev_crawl">
+  <a href="https://github.com/ajou-www/goodjob-crawl">
     <img src="https://img.shields.io/badge/click--here-dev--crawl-ka?style=for-the-badge&logo=nodedotjs" alt="Go to Dev">
   </a>
 </td>
@@ -57,7 +57,7 @@
 <td>FE</td>
 <td>프론트엔드 및 UX/UI</td>
 <td>
-  <a href="https://github.com/hun9008/CV_Search/tree/dev_front">
+  <a href="https://github.com/ajou-www/goodjob-front">
     <img src="https://img.shields.io/badge/click--here-dev--front-skyblue?style=for-the-badge&logo=react" alt="Go to Dev">
   </a>
 </td>
@@ -275,11 +275,11 @@
 
 | 브랜치명     | 역할                    | 배포 방식                        |
 |--------------|-------------------------|----------------------------------|
-| <a href="https://github.com/hun9008/CV_Search/tree/dev_front" target="_blank">dev_front</a>    | 프론트엔드              | GitHub Actions → S3, CloudFront |
-| <a href="https://github.com/hun9008/CV_Search/tree/dev_spring" target="_blank">dev_spring</a>   | Spring 백엔드 서버      | GitHub Actions → EC2            |
-| <a href="https://github.com/hun9008/CV_Search/tree/dev_crawl" target="_blank">dev_crawl</a>    | 크롤러 서버 (Node.js)   | GitHub Actions → EC2            |
-| <a href="https://github.com/hun9008/CV_Search/tree/dev_RDB" target="_blank">dev_RDB</a>      | MySQL 데이터베이스      | GitHub Actions → EC2 + Docker   |
-| <a href="https://github.com/hun9008/CV_Search/tree/dev_ES" target="_blank">dev_ES</a>       | FastAPI 서버      | GitHub Actions → ECS, ECR       |
+| <a href="https://github.com/ajou-www/goodjob-front" target="_blank">dev_front</a>    | 프론트엔드              | GitHub Actions → S3, CloudFront |
+| <a href="https://github.com/ajou-www/goodjob-spring" target="_blank">dev_spring</a>   | Spring 백엔드 서버      | GitHub Actions → EC2            |
+| <a href="https://github.com/ajou-www/goodjob-crawl" target="_blank">dev_crawl</a>    | 크롤러 서버 (Node.js)   | GitHub Actions → EC2            |
+| <a href="https://github.com/ajou-www/goodjob-rdb" target="_blank">dev_RDB</a>      | MySQL 데이터베이스      | GitHub Actions → EC2 + Docker   |
+| <a href="https://github.com/ajou-www/goodjob-es" target="_blank">dev_ES</a>       | FastAPI 서버      | GitHub Actions → ECS, ECR       |
 
 - 각 브랜치는 다음 파일들을 포함합니다:
   - `Dockerfile`
