@@ -97,16 +97,20 @@
 ## 1. CV 형식 무관, 정밀 공고 추천
 
 <img src="./img/vila.png" width="400">
-<img src="./img/score.png" width="400">
+<img src="./img/updated_score.png" width="400">
 
 
 | 항목        | 설명 |
 |-------------|------|
 | **형식 자유도** | 어떤 형태의 PDF 이력서든 업로드만 하면 분석 가능 |
 | **기술 기반** | <a href="https://github.com/allenai/vila" target="_blank">VILA</a> 기반 OCR (<a href="https://arxiv.org/pdf/1905.11946" target="_blank">EfficientNet</a> 기반)로 문서 구조와 시각 블록 정밀 인식 |
-| **추천 로직** | <a href="https://en.wikipedia.org/wiki/Okapi_BM25" target="_blank">BM25</a> (<a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf" target="_blank">TF-IDF</a> 기반 키워드 유사도) </br> + <a href="https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2" target="_blank">SentenceTransformer</a> (<a href="https://en.wikipedia.org/wiki/Cosine_similarity" target="_blank">Cosine Similarity</a>) |
+| **추천 로직** | context, topic, word의 3개의 level로 다른 view에서 유사도 점수 산출<br>가중 합산하여 최종 추천 점수 도출 |
 | **결과** | 자유 양식 이력서도 높은 정확도로 채용 공고 자동 추천 |
 
+
+<img src="./img/eval.png" width="600">
+
+resume-job 데이터셋에서 한국어에 강한 임베딩 모델과 전처리 및 다층 점수(Hierarchical Score)를 적용한 점수 기반 추천 방식을 통해 기존 CF, Graph 기반 모델보다 우수한 추천 성능
 
 ## 2. 구체적이고 실용적인 공고 피드백
 
@@ -142,7 +146,7 @@
 
 # 시스템 아키텍처
 
-<img src="./img/systemArchitecture.png">
+<img src="./img/updated_systemArchitecture.png">
 
 ## 아키텍처 설계 원칙
 
@@ -165,7 +169,7 @@
 
 # 공고 크롤링 파이프라인
 
-<img src="./img/crawl.png">
+<img src="./img/updated_crawl.png">
 
 
 - 1단계: URL 수집 및 큐 등록
